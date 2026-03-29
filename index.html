@@ -10,9 +10,11 @@
 
 </head>
 <body>
-
+<audio id="keySound" src="click.mp3" preload="auto"></audio>
+<div id="calculator-wrapper">
+<img src="mochimath2.png" alt="MochiMath" class="title-img">
 <div id="calculator">
-    <input id="display" readonly>
+    <input id="display" readonly placeholder="0">
         <div id="displayin" readonly>
     <div id="pet-character">(◕‿◕)</div> 
     <div id="keys">
@@ -38,12 +40,12 @@
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
         
-        <button onclick="calculate()">=</button>
+        <button onclick="calculate()" class="operator-btn">=</button>
         <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
         <button onclick="cleardisplay()" class="operator-btn">C</button>
         <button onclick="Backspace()" class="operator-btn">⌫</button>
         <button onclick="toggleSign()"class="operator-btn plusminus">+/-</button>
-
+        
         <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
 
     </div>
